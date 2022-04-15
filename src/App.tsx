@@ -20,6 +20,16 @@ import {MuiSpeedDial} from './components/MuiSpeedDial';
 import {MuiBottomNavigation} from './components/MuiBottomNavigation'
 import {MuiAvatar} from './components/MuiAvatar';
 import {MuiBadge} from './components/MuiBadge';
+import {MuiList} from './components/MuiList';
+import {MuiChip} from './components/MuiChip';
+import {MuiTooltip} from './components/MuiTooltip';
+import {MuiTable} from './components/MuiTable';
+import {MuiAlert} from './components/MuiAlert';
+import {MuiSnackbar} from './components/MuiSnackbar';
+import {MuiDialog} from './components/MuiDialog';
+import {MuiProgress} from './components/MuiProgress';
+import {MuiSkeleton} from './components/MuiSkeleton';
+import {MuiLoadingButton} from './components/MuiLoadingButton';
 function App() {
   return (
     <div className="App">
@@ -40,10 +50,20 @@ function App() {
      {/* <MuiLink /> */}
      {/* <MuiBreadcrumbs />
      <MuiDrawer /> */}
-     <MuiSpeedDial />
+     {/* <MuiSpeedDial />
      <MuiBottomNavigation />
      <MuiAvatar />
-     <MuiBadge />
+     <MuiBadge /> */}
+     {/* <MuiList />
+     <MuiChip /> */}
+     {/* <MuiTooltip /> */}
+     {/* <MuiTable /> */}
+     {/* <MuiAlert /> */}
+     {/* <MuiSnackbar />
+     <MuiDialog /> */}
+     {/* <MuiProgress /> */}
+    {/* <MuiSkeleton /> */}
+    <MuiLoadingButton />
     </div>
   );
 }
