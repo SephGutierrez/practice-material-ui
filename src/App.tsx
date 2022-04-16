@@ -1,4 +1,7 @@
 import './App.css';
+import { createTheme, colors, ThemeProvider } from '@mui/material';
+import { LocalizationProvider } from '@mui/lab';
+import AdapterDateFns from '@mui/lab/AdapterDateFns'
 import {MuiTypography} from './components/MuiTypography';
 import {MuiButton} from './components/MuiButton';
 import {MuiTextField} from './components/MuiTextField';
@@ -30,8 +33,31 @@ import {MuiDialog} from './components/MuiDialog';
 import {MuiProgress} from './components/MuiProgress';
 import {MuiSkeleton} from './components/MuiSkeleton';
 import {MuiLoadingButton} from './components/MuiLoadingButton';
+import {MuiPicker} from './components/MuiPicker';
+import {MuiTabs} from './components/MuiTabs';
+import {MuiTimeline} from './components/MuiTimeline';
+import {MuiMasonry} from './components/MuiMasonry';
+import {MuiResponsiveness} from './components/MuiResponsiveness';
+
+const theme = createTheme({
+  status: {
+    danger: '#e53e3e'
+  },
+  palette: {
+    secondary: {
+      main: colors.teal[400],
+    },
+  neutral: {
+    main: colors.grey[500],
+    darker: colors.grey[700],
+  },
+  },
+})
+
 function App() {
   return (
+    <ThemeProvider theme={theme}>
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
     <div className="App">
       {/* <MuiTypography /> */}
       {/* <MuiButton /> */}
@@ -46,7 +72,7 @@ function App() {
      {/* <MuiCard /> */}
      {/* <MuiAccordion /> */}
      {/* <MuiImageList /> */}
-     <MuiNavbar />
+     {/* <MuiNavbar /> */}
      {/* <MuiLink /> */}
      {/* <MuiBreadcrumbs />
      <MuiDrawer /> */}
@@ -63,8 +89,15 @@ function App() {
      <MuiDialog /> */}
      {/* <MuiProgress /> */}
     {/* <MuiSkeleton /> */}
-    <MuiLoadingButton />
+    {/* <MuiLoadingButton /> */}
+    {/* <MuiPicker />
+    <MuiTabs />
+    <MuiTimeline /> */}
+    {/* <MuiMasonry /> */}
+    <MuiResponsiveness />
     </div>
+    </LocalizationProvider>
+    </ThemeProvider>
   );
 }
 
